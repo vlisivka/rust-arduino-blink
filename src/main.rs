@@ -1,7 +1,7 @@
-#![feature(lang_items)]
 #![no_std]
 #![no_main]
 
+extern crate avr_std_stub;
 use arduino_uno::prelude::*;
 
 #[arduino_uno::entry]
@@ -21,14 +21,3 @@ fn main() -> ! {
         arduino_uno::delay_ms(500);
     }
 }
-
-// No panic, just loop
-#[panic_handler]
-fn my_panic(_info: &core::panic::PanicInfo) -> ! {
-    loop {}
-}
-
-// Exception handler is called to unwind panic
-#[lang = "eh_personality"]
-extern "C" fn eh_personality() {}
-

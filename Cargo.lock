@@ -56,6 +56,12 @@ dependencies = [
 ]
 
 [[package]]
+name = "avr-std-stub"
+version = "1.0.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "b81c8e8c23121c998236d1fb16537ae599318fe0e1a099b68c02221aa34f1576"
+
+[[package]]
 name = "bare-metal"
 version = "0.2.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -130,6 +136,7 @@ name = "rust-arduino-blink"
 version = "0.1.0"
 dependencies = [
  "arduino-uno",
+ "avr-std-stub",
 ]
 
 [[package]]
