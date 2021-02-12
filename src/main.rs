@@ -1,7 +1,7 @@
 #![no_std]
 #![no_main]
 
-extern crate avr_std_stub;
+use avr_std_stub as _;
 use arduino_uno::prelude::*;
 
 #[arduino_uno::entry]

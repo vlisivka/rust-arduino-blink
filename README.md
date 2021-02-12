@@ -1,5 +1,7 @@
 # rust-arduino-blink
 
-"Hello, world!" for arduino in Rust.
+Blink example for Arduino Uno in Rust. Developed on Fedora Linux 33.
 
-Requires rust-nightly, avr-gcc, avr-libc, and avrdude.
+Requires rust nightly-2021-01-07, avr-gcc, avr-libc, and avrdude.
+
+ROM size: 304 bytes.

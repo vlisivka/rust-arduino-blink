@@ -1,2 +1,2 @@
 #!/bin/sh
-exec cargo +nightly doc --open
+exec cargo +nightly-2021-01-07 doc --open
