@@ -4,6 +4,12 @@ version = "0.2.0"
 authors = ["Volodymyr M. Lisivka <vlisivka@gmail.com>"]
 edition = "2018"
 
+[[bin]]
+name = "rust-arduino-blink"
+# Commands "cargo test" and "cargo bench" will not compile, because of no_std.
+test = false
+bench = false
+
 [dependencies]
 
 # Empty stubs for few functions required for panic handling
@@ -44,7 +50,5 @@ codegen-units = 1
 
 # Panic handling is not available
 panic = 'abort'
-
-# Commands "cargo test" and "cargo bench" will not compile, because of no_std.
 
 # See also ./cargo/config.toml
