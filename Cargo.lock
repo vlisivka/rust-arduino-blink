@@ -3,7 +3,7 @@
 [[package]]
 name = "arduino-uno"
 version = "0.1.0"
-source = "git+https://github.com/Rahix/avr-hal?rev=536c5d#536c5d576564f4a86bdf4acf3457b71763bd158d"
+source = "git+https://github.com/Rahix/avr-hal?rev=b1aedf82#b1aedf824fcb59078f8022d4464b2835ae4bd83a"
 dependencies = [
  "atmega328p-hal",
  "avr-hal-generic",
@@ -12,7 +12,7 @@ dependencies = [
 [[package]]
 name = "atmega328p-hal"
 version = "0.1.0"
-source = "git+https://github.com/Rahix/avr-hal?rev=536c5d#536c5d576564f4a86bdf4acf3457b71763bd158d"
+source = "git+https://github.com/Rahix/avr-hal?rev=b1aedf82#b1aedf824fcb59078f8022d4464b2835ae4bd83a"
 dependencies = [
  "avr-device",
  "avr-hal-generic",
@@ -20,9 +20,9 @@ dependencies = [
 
 [[package]]
 name = "avr-device"
-version = "0.2.3"
+version = "0.3.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "c40762573452193b6b7870342f8d5bd60f3c92e1e85a39030c427e8b1cb2e3c0"
+checksum = "63801a7acebed9c5ad3d89a9d3baa394fdd4de5e3a9a2384f9659fa1dc7fa823"
 dependencies = [
  "avr-device-macros",
  "bare-metal",
@@ -32,9 +32,9 @@ dependencies = [
 
 [[package]]
 name = "avr-device-macros"
-version = "0.2.3"
+version = "0.3.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "eda8bf2cf652ffc2dd5bda2d1a7e8171c08ce296a01f8cf9e4791c48e86e34bd"
+checksum = "bdd9b528ac23fbb2553d35a7cc11bb857df30a9d2786c3686d1e8bbda9a7b4f8"
 dependencies = [
  "proc-macro2",
  "quote",
@@ -44,7 +44,7 @@ dependencies = [
 [[package]]
 name = "avr-hal-generic"
 version = "0.1.0"
-source = "git+https://github.com/Rahix/avr-hal?rev=536c5d#536c5d576564f4a86bdf4acf3457b71763bd158d"
+source = "git+https://github.com/Rahix/avr-hal?rev=b1aedf82#b1aedf824fcb59078f8022d4464b2835ae4bd83a"
 dependencies = [
  "avr-device",
  "cfg-if",
@@ -133,7 +133,7 @@ dependencies = [
 
 [[package]]
 name = "rust-arduino-blink"
-version = "0.1.0"
+version = "0.2.0"
 dependencies = [
  "arduino-uno",
  "avr-std-stub",
